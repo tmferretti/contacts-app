@@ -6,4 +6,9 @@ class Contact < ApplicationRecord
   def full_name
     return "#{first_name} #{last_name}"
   end
+
+  def japan_phone_conv
+    phone = phone_number.to_s
+    return "+81 #{phone}"
+  end
 end
