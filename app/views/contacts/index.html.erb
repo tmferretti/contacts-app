@@ -1,0 +1,16 @@
+
+
+<% @contacts.each do |contact|%>
+   <div class="col-md-4"> 
+    <div class="well">
+      <h5 class="text-left"><i>First Name:</i></h5> <p class="text-right"><a href= "/contacts/<%= contact.id %>"><%= contact.first_name %></a></p>
+      <h5 class="text-left"><i>Last Name:</i></h5> <p class="text-right"><%= contact.last_name %></p>
+      <h5 class="text-left"><i>Email:</i></h5> <p class="text-right"><%= contact.email %></p>
+      <h5 class="text-left"><i>Phone Number:</i></h5> <p class="text-right"><%= contact.phone_number %></p>
+      <div>
+        <span class="pull-right"><h6>Created At: <%= contact.friendly_created_at %></h6></span>
+        <br>
+      </div>
+    </div>
+  </div>
+<% end %>

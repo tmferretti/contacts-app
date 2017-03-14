@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: monaco,Consolas,"Lucida Console",monospace
+  background-image: url(ep_naturalblack.png);
+}
+
+
