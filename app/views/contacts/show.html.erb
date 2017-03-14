@@ -1,10 +1,13 @@
-
-<p>First Name: <%= @contact.first_name %></p>
-<p>Last Name: <%= @contact.last_name %></p>
-<p>Email: <%= @contact.email %></p>
-<p>Phone Number: <%= @contact.phone_number %></p>
-
-
+<div class="well">
+  <p>First Name: <%= @contact.first_name %></p>
+  <p>Last Name: <%= @contact.last_name %></p>
+  <p>Email: <%= @contact.email %></p>
+  <p>Phone Number: <%= @contact.phone_number %></p>
+  <div>
+    <span class="pull-right"><h6>Created At: <%= @contact.friendly_created_at %></h6></span>
+    <br>
+  </div>
+</div>
 
 
 <div class="dropdown">
